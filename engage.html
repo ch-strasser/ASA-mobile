@@ -282,88 +282,90 @@ main h3 {
 
 
 
-  /* Responsive styles for mobile screens */
-  @media (max-width: 768px) {
-    .header-content {
-      flex-direction: column;
-    }
-header h1{
+ /* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+  header h1 {
     text-align: center; /* Optional: if you want to center-align each word */
-    font-size: 22px; margin-left: 0px; margin-right: 0px; font-weight: bold;
+    font-size: 22px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
   }
-    #logo {
-        max-height: 150px; /* Smaller logo for mobile */
-        width: auto; /* Maintain aspect ratio */
-        margin-bottom: 0; /* Adjust if needed */
-        margin-top: -10.0; /* Adjust if needed */
-    }
-    h2 {
-  text-align: left; margin-top: 20px; margin-bottom: 20px /* or any other default alignment */
-  /* other styles */
-}
-body {
-      font-size: 18px; line-height:;
-    }
-    .menu-toggle {
-      display: block;
-      position: absolute; /* Position it at the top right */
-      top: 0;
-      right: 0;
-      padding: 1rem 2rem;
-    }
- .custom-text {
+  #logo {
+    max-height: 150px; /* Smaller logo for mobile */
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 0; /* Adjust if needed */
+    margin-top: -10px; /* Adjust if needed */
+  }
+  h2 {
+    text-align: left; /* or any other default alignment */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* other styles */
+  }
+  body {
+    font-size: 18px;
+    line-height: 2.0;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute; /* Position it at the top right */
+    top: 0;
+    right: 0;
+    padding: 1rem 2rem;
+  }
+  .custom-text {
     margin-left: 0px; /* Adjust this value as needed for mobile */
-margin-right: 0px; text-align: justify;
+    margin-right: 0px;
+    text-align: justify;
   }
-    nav ul {
-      flex-direction: column;
-      width: 100%;
-      display: none;
-    }
-
-    nav.active ul {
-      display: flex;
-    }
-
-    nav a {
-  font-size: 20px; /* Set your desired font size for mobile here */
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  display: block;
-}
-
-
-footer {
+  #contact { /* Adjust padding for the contact section on mobile */
+    padding: 0 20px; /* Add padding for left and right */
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  nav.active ul {
+    display: flex;
+  }
+  nav a {
+    font-size: 20px; /* Set your desired font size for mobile here */
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  footer {
     background: #00412d;
     color: white;
     padding: 1rem;
     text-align: left;
   }
-
   .footer-top {
     display: flex; /* Turn footer-top into a flex container */
     flex-wrap: wrap; /* Allow items to wrap as needed */
     justify-content: space-between; /* Distribute space between the items */
     text-align: left;
   }
-
   .footer-section {
     flex: 1; /* Make footer sections grow and take up equal space */
     margin-bottom: 1rem;
-    font-size: 18px; 
+    font-size: 18px;
     text-align: left;
     min-width: 50%; /* Ensure they don't shrink below 50% width */
   }
-
   .footer-bottom {
     text-align: left;
     padding-top: 0;
     font-size: 18px;
   }
-    nav {
-      order: 2; /* Ensure nav is below the title when active */
-    }
+  nav {
+    order: 2; /* Ensure nav is below the title when active */
   }
 }
 
