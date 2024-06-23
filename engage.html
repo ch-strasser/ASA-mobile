@@ -317,10 +317,13 @@ main h3 {
     right: 0;
     padding: 1rem 2rem;
   }
-  .custom-text, #contact, main, footer, .footer-section, .footer-bottom {
-    margin-left: 20px; /* Consistent margin for left side */
-    margin-right: 20px; /* Consistent margin for right side */
+  .custom-text {
+    margin-left: 0px; /* Adjust this value as needed for mobile */
+    margin-right: 0px;
     text-align: justify;
+  }
+  #contact { /* Adjust padding for the contact section on mobile */
+    padding: 0 20px; /* Add padding for left and right */
   }
   nav ul {
     flex-direction: column;
@@ -365,6 +368,7 @@ main h3 {
     order: 2; /* Ensure nav is below the title when active */
   }
 }
+
 
 </style>
 
